@@ -1,0 +1,13 @@
+TypeName,DataId
+UnitTypesList,0
+TechTypeList,1
+BuildingTypesList,2
+int,3
+bool,4
+Map Point,5
+string,6
+ImprovementList,7
+ID List,8
+float,9
+DistrictList,10
+CivicsList,11

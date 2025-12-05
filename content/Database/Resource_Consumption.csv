@@ -1,0 +1,8 @@
+ResourceType,Accumulate,PowerProvided,CO2perkWh,BaseExtractionRate,ImprovedExtractionRate,ObsoleteTech,StockpileCap
+RESOURCE_COAL,1,4,820,0,3,,50
+RESOURCE_OIL,1,4,490,0,3,,50
+RESOURCE_URANIUM,1,16,48,0,3,,50
+RESOURCE_HORSES,1,0,0,0,2,,50
+RESOURCE_IRON,1,0,0,0,2,,50
+RESOURCE_NITER,1,0,0,0,2,,50
+RESOURCE_ALUMINUM,1,0,0,0,2,,50

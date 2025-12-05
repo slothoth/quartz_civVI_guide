@@ -1,0 +1,3 @@
+WeaponType,Name,BlastRadius,FalloutDuration,AffectPopulation,AffectImprovements,AffectBuildings,AffectUnits,AffectResources,AffectRoutes,ICBMStrikeRange,Maintenance
+WMD_NUCLEAR_DEVICE,LOC_WMD_NUCLEAR_DEVICE_NAME,1,10,1,1,1,1,1,1,12,14
+WMD_THERMONUCLEAR_DEVICE,LOC_WMD_THERMONUCLEAR_DEVICE_NAME,2,20,1,1,1,1,1,1,15,16

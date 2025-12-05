@@ -1,0 +1,1 @@
+yadda yadda localization database. LOC_NOUN_NAME, LOC_NOUN_DESCRIPTION standards.

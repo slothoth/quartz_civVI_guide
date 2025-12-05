@@ -1,0 +1,2 @@
+RowId,SQL,SectionIdColumn,PageIdColumn,SearchTermColumn
+1,"SELECT ""GOVERNORS"" AS SectionId, GovernorType AS PageId, ShortTitle AS Term FROM Governors",SectionId,PageId,Term

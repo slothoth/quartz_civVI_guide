@@ -1,0 +1,151 @@
+Type,Name,CommonName,Description,ArgumentType,DefaultValue,Required,MinValue,MaxValue,DatabaseKind
+EFFECT_ADJUST_PLAYER_FREE_GREAT_PERSON_POINTS,Amount,,,int,,1,,,
+EFFECT_ADJUST_FULL_ACCESS_ONE_STRATEGIC,Access,,,bool,,0,,,
+EFFECT_ADJUST_PLAYER_TOURISM,Amount,,,int,,1,,,
+EFFECT_ADJUST_PLOT_YIELD,YieldType,,One or more yield types separated by a comma.,database,,1,,,KIND_YIELD
+EFFECT_ADJUST_PLOT_YIELD,Amount,,The amount of yield change.  Must be either a single value or multiple to match each yield type.,int,,1,,,
+EFFECT_ADJUST_GREAT_PEOPLE_POINTS_PER_KILL,Amount,,,int,,0,,,
+EFFECT_ADJUST_GREAT_PEOPLE_POINTS_PER_KILL,GreatPersonClassType,,,database,,1,,,KIND_GREAT_PERSON_CLASS
+EFFECT_ADJUST_UNIT_IGNORE_RESOURCE_MAINTENANCE,Ignore,,"When set to true, the unit no longer accrues resource maintenance.",bool,false,0,,,
+EFFECT_ADJUST_UNIT_WMD_PROTECTION,Blast,,The integer percent value of resistance to damage from a WMD blast.,int,,0,,,
+EFFECT_ADJUST_UNIT_WMD_PROTECTION,Fallout,,The integer percent value of resistance to damage from WMD fallout.,int,,0,,,
+EFFECT_ADJUST_UNIT_WATER_DAMAGE_PROTECTION,WaterDamage,,The integer percent value of resistance to damage from water,int,,0,,,
+EFFECT_ATTACH_MODIFIER,ModifierId,,,text,,1,,,
+EFFECT_ADJUST_BUILDING_FEATURE_YIELD_CHANGE,Amount,,,int,,1,,,
+EFFECT_ADJUST_BUILDING_FEATURE_YIELD_CHANGE,FeatureType,,,database,,1,,,KIND_FEATURE
+EFFECT_ADJUST_BUILDING_FEATURE_YIELD_CHANGE,YieldType,,,database,,1,,,KIND_YIELD
+EFFECT_CITY_GRANT_HERO,HeroClassType,,The Hero Class to grant.,database,,1,,,KIND_HEROCLASS
+EFFECT_CITY_GRANT_HERO,LocationBuildingType,,The Building in the city that the Hero will spawn at and be linked with.,database,,1,,,KIND_BUILDING
+EFFECT_CITY_GRANT_RANDOM_RESOURCE_PRODUCT,ResourceType,,The type of Resource the product is made from.,text,,1,,,
+EFFECT_DIPLOMACY_AGENDA_OPPORTUNIST,RecentSurpriseWarBonus,,,int,15,0,,,
+EFFECT_DIPLOMACY_AGENDA_OPPORTUNIST,SurpriseWarDegradeTurns,,,int,3,0,,,
+EFFECT_DIPLOMACY_AGENDA_OPPORTUNIST,EachSurpriseWarBonus,,,int,1,0,,,
+EFFECT_DIPLOMACY_AGENDA_OPPORTUNIST,NeverSurpriseWarPenalty,,,int,-6,0,,,
+EFFECT_GRANT_INFLUENCE_TOKEN,Amount,,,int,,1,,,
+EFFECT_GRANT_PROMOTION,PromotionType,,,database,,1,,,KIND_UNITPROMOTION
+EFFECT_GRANT_RANDOM_CIVIC_BOOST_BY_ERA,Amount,,,int,,1,,,
+EFFECT_GRANT_RANDOM_CIVIC_BOOST_BY_ERA,StartEraType,,,database,,1,,,KIND_ERA
+EFFECT_GRANT_RANDOM_CIVIC_BOOST_BY_ERA,EndEraType,,,database,,1,,,KIND_ERA
+EFFECT_GRANT_RANDOM_TECHNOLOGY_BOOST_BY_ERA,Amount,,,int,,1,,,
+EFFECT_GRANT_RANDOM_TECHNOLOGY_BOOST_BY_ERA,StartEraType,,,database,,1,,,KIND_ERA
+EFFECT_GRANT_RANDOM_TECHNOLOGY_BOOST_BY_ERA,EndEraType,,,database,,1,,,KIND_ERA
+EFFECT_GRANT_RELIC,Amount,,,int,,1,,,
+EFFECT_GRANT_SPY,Amount,,,int,,1,,,
+EFFECT_GRANT_UNIT_IN_EACH_DISTRICT,IgnoreDefensible,,,bool,True,0,,,
+EFFECT_GRANT_UNIT_IN_EACH_DISTRICT,UnitType,,,database,,1,,,KIND_UNIT
+EFFECT_GRANT_UNIT_IN_EACH_DISTRICT,UniqueOverride,,Whether or not to override with unique units,bool,False,0,,,
+EFFECT_GRANT_UNIT_TYPE_UNLIMITED_PROMOTION_CHOICES,UnitType,,,database,,1,,,KIND_UNIT
+EFFECT_GRANT_UNIT_WITH_EXPERIENCE,Experience,,,int,,1,,,
+EFFECT_GRANT_UNIT_WITH_EXPERIENCE,UnitType,,,database,,1,,,KIND_UNIT
+EFFECT_GRANT_UNIT_WITH_EXPERIENCE,UniqueOverride,,Whether or not to override with unique units,bool,False,0,,,
+EFFECT_ADJUST_NATURAL_WONDER_RELIC,Amount,,,int,,1,,,
+EFFECT_ADJUST_PLAYER_FEAUTE_REQUIRED_FOR_SPECIALTY_DISTRICTS,FeatureType,,,database,,1,,,KIND_FEATURE
+EFFECT_PLAYER_DISCOVER_HERO,HeroClassType,,The Hero Class to grant.,database,,1,,,KIND_HEROCLASS
+EFFECT_ADJUST_PLAYER_DISTRICT_AND_BUILDINGS_CREATE_UNIT_WITH_ABILITY_BY_CLASS,DistrictType,,,,,1,,,
+EFFECT_ADJUST_PLAYER_DISTRICT_AND_BUILDINGS_CREATE_UNIT_WITH_ABILITY_BY_CLASS,UnitPromotionClass,,,,,1,,,
+EFFECT_ADJUST_PLAYER_DISTRICT_AND_BUILDINGS_CREATE_UNIT_WITH_ABILITY_BY_CLASS,UnitAbilityType,,,,,0,,,
+EFFECT_ADJUST_PLAYER_DISTRICT_CREATE_UNIT,DistrictType,,,database,,1,,,KIND_DISTRICT
+EFFECT_ADJUST_PLAYER_DISTRICT_CREATE_UNIT,UnitType,,,database,,1,,,KIND_UNIT
+EFFECT_ADJUST_PLAYER_DISTRICT_CREATE_YIELD,Amount,,,,,1,,,
+EFFECT_ADJUST_PLAYER_DISTRICT_CREATE_YIELD,YieldType,,,,,1,,,
+EFFECT_ADJUST_PLAYER_DISTRICT_CREATE_YIELD,DistrictType,,,,,0,,,
+EFFECT_ADJUST_PLAYER_DISTRICT_CREATE_YIELD,YieldBasedOnAppeal,,,,,0,,,
+EFFECT_ADJUST_PLAYER_DISTRICT_CREATE_YIELD,MustReplaceImprovement,,,,,0,,,
+EFFECT_ADJUST_PLAYER_DISTRICT_CREATE_YIELD,ImprovementType,,,,,0,,,
+EFFECT_TREAT_CAPITAL_AS_HOLY_CITY,Value,,,bool,,1,,,
+EFFECT_TRIGGER_GAME_MECHANIC,MechanicName,,,text,,1,,,
+EFFECT_ADJUST_GOVERNOR_IDENTITY_PRESSURE,Amount,,The delta amount of pressure to modify the strength.,int,,0,,,
+EFFECT_ADJUST_GOVERNOR_IDENTITY_PRESSURE,DomesticCities,,"If true, the effect will apply the value to the Governor's external domestic pressure.",bool,false,0,,,
+EFFECT_ADJUST_GOVERNOR_IDENTITY_PRESSURE,ForeignCities,,"If true, the effect will apply only once per",bool,false,0,,,
+EFFECT_ADJUST_PLAYER_POST_COMBAT_LOYALTY,Amount,,The delta amount to change the city's current Loyalty,int,,0,,,
+EFFECT_ADJUST_PLAYER_POST_COMBAT_LOYALTY,AffectLocal,,"If true, the effect will apply to the victor's city, if false it will apply to the enemy's city",bool,true,0,,,
+EFFECT_ADJUST_PLAYER_POST_COMBAT_LOYALTY,AdditionalGoldenAge,,Adds an additional amount against targets in a golden age,int,,0,,,
+EFFECT_ADJUST_PLAYER_POST_PILLAGE_LOYALTY,Amount,,The delta amount to change the city's current Loyalty,int,,0,,,
+EFFECT_ADJUST_PLAYER_POST_PILLAGE_LOYALTY,AffectLocal,,"If true, the effect will apply to the victor's city, if false it will apply to the enemy's city",bool,true,0,,,
+EFFECT_ADJUST_PLAYER_TOURISM_FROM_NATIONAL_PARKS,Amount,,,int,,1,,,
+EFFECT_ADJUST_TRADE_ROUTE_YIELD_CHANGE,Amount,,,int,,1,,,
+EFFECT_ADJUST_TRADE_ROUTE_YIELD_CHANGE,AffectDestination,,,bool,false,0,,,
+EFFECT_ADJUST_TRADE_ROUTE_YIELD_CHANGE,AffectOrigin,,,bool,false,0,,,
+EFFECT_ADJUST_TRADE_ROUTE_YIELD_CHANGE,YieldType,,,database,,1,,,KIND_YIELD
+EFFECT_ADJUST_UNIT_VALID_TERRAIN,TerrainType,,,database,,1,,,KIND_TERRAIN
+EFFECT_ADJUST_UNIT_VALID_TERRAIN,Valid,,Whether or not the terrain type is valid to move into.,bool,False,0,,,
+EFFECT_ATTACH_PERMANENT_MODIFIER_TO_ADJACENT_PLOT_UNITS,ModifierId,,,text,,1,,,
+EFFECT_ATTACH_PERMANENT_MODIFIER_TO_PLOT_UNITS,ModifierId,,,text,,1,,,
+EFFECT_ATTACH_UNIT_MODIFIER,ModifierId,,,text,,1,,,
+EFFECT_DISTRICT_ADJACENCY,Amount,,,int,,1,,,
+EFFECT_DISTRICT_ADJACENCY,Description,,,text,,1,,,
+EFFECT_DISTRICT_ADJACENCY,YieldType,,,database,,1,,,KIND_YIELD
+EFFECT_DISTRICT_ADJACENCY,DistrictType,,,database,,1,,,KIND_DISTRICT
+EFFECT_ADJUST_PLAYER_UNIT_BUILD_DISABLED,UnitType,,,database,,1,,,KIND_UNIT
+EFFECT_REPLACE_PLAYER_GOVERNMENT_SLOT_TYPE,AddedGovernmentSlotType,,,database,,1,,,
+EFFECT_REPLACE_PLAYER_GOVERNMENT_SLOT_TYPE,ReplacedGovernmentSlotType,,,database,,1,,,
+EFFECT_RIVER_ADJACENCY,Amount,,,int,,1,,,
+EFFECT_RIVER_ADJACENCY,Description,,,text,,1,,,
+EFFECT_RIVER_ADJACENCY,DistrictType,,,database,,1,,,KIND_DISTRICT
+EFFECT_RIVER_ADJACENCY,YieldType,,,database,,1,,,KIND_YIELD
+EFFECT_TERRAIN_ADJACENCY,Amount,,,int,,1,,,
+EFFECT_TERRAIN_ADJACENCY,Description,,,text,,1,,,
+EFFECT_TERRAIN_ADJACENCY,DistrictType,,,database,,1,,,KIND_DISTRICT
+EFFECT_TERRAIN_ADJACENCY,TerrainType,,,database,,1,,,KIND_TERRAIN
+EFFECT_TERRAIN_ADJACENCY,YieldType,,,database,,1,,,KIND_YIELD
+EFFECT_TREAT_HOLY_SITE_AS_HOLY_CITY,Value,,,bool,,1,,,
+EFFECT_ADJUST_PLAYER_BLOCK_UNIT_ENTRY,UnitType,,,database,,1,,,KIND_UNIT
+EFFECT_ADJUST_CITY_STRATEGIC_RESOURCE_REQUIREMENT_MODIFIER,Amount,,The integer percent value of discount on strategic resources required for unit production,int,,0,,,
+EFFECT_ADJUST_GLOBAL_WMD_STOCKPILE,TargetOnly,,A boolean value indicating if the effect only pertains to the target player.,bool,false,0,,,
+EFFECT_ADJUST_GLOBAL_WMD_STOCKPILE,Amount,,"If TargetOnly == true, this is the value to set the target player's WMD count(s) to.",int,,0,,,
+EFFECT_ADJUST_PLAYER_GOVERNOR_FAVOR,GovernorType,,A text value indicating the Governor type that grants favor when promoted.,text,NO_GOVERNOR,0,,,
+EFFECT_ADJUST_PLAYER_GOVERNOR_FAVOR,Neutralize,,A boolean value determining if the Governor type should be neutralized.,bool,false,0,,,
+EFFECT_ADJUST_PLAYER_GOVERNOR_FAVOR,FavorAmount,,An integer value indicating the amount of favor gained when the specified governor is promoted,int,,0,,,
+EFFECT_ADJUST_PLAYER_GRIEVANCE_DECAY,Amount,,,int,,1,,,
+EFFECT_ADJUST_PLAYER_GRIEVANCE_GENERATION,Amount,,,int,,1,,,
+EFFECT_ADJUST_PLAYER_BAN_UNIT_PRODUCTION_YIELD,YieldType,,A text value indicating the YieldType to be banned from player use.,text,NO_YIELD,0,,,
+EFFECT_ADJUST_PLAYER_BUFF_UNIT_PRODUCTION_YIELD,YieldType,,A text value indicating the YieldType to be banned from player use.,text,NO_YIELD,0,,,
+EFFECT_ADJUST_PLAYER_BUFF_UNIT_PRODUCTION_YIELD,Amount,,An integer value indicating the cost discount for the specified yield type.,int,,0,,,
+EFFECT_ADJUST_PLAYER_RESOURCE_ACCUMULATION_MODIFIER,ResourceType,,A boolean value indicating if the effect only pertains to the target player.,text,-1,0,,,
+EFFECT_ADJUST_PLAYER_RESOURCE_ACCUMULATION_MODIFIER,Amount,,Amount to adjust the extra accumulation modifier.,int,,0,,,
+EFFECT_ADJUST_PLAYER_ROCK_BAND_UNIT_ALBUM_SALES,Amount,,,int,,1,,,
+EFFECT_ADJUST_PLAYER_UNIT_UPGRADE_RESOURCE_COST_DISCOUNT,Amount,,The integer percent value of discount on strategic resources required for unit upgrades,int,,0,,,
+EFFECT_ATTACH_MODIFIER_IF_PROMOTION_CLASS_MATCHES,ModifierId,,,text,,1,,,
+EFFECT_ATTACH_MODIFIER_IF_PROMOTION_CLASS_MATCHES,UnitPromotionClassType,,,int,,1,,,
+EFFECT_ATTACH_MODIFIER_TO_MINORCIVBONUSTYPE,ModifierId,,,text,,1,,,
+EFFECT_ATTACH_MODIFIER_TO_MINORCIVBONUSTYPE,MinorCivBonusType,,,int,,1,,,
+EFFECT_ATTACH_MODIFIER_TO_PLAYERTYPE,ModifierId,,,text,,1,,,
+EFFECT_ATTACH_MODIFIER_TO_PLAYERTYPE,PlayerType,,,int,,1,,,
+EFFECT_DISABLE_PLAYER_GRIEVANCE_DECAY,Disable,,,bool,,1,,,
+EFFECT_GRANT_FOUND_FOREIGN_CITY_TRADE_ROUTE_CAPACITY,Amount,,,int,,1,,,
+EFFECT_GRANT_GOLDEN_AGE_TRADE_ROUTE_CAPACITY,Amount,,,int,,1,,,
+EFFECT_GRANT_INFLUENCE_TOKEN_LEVY_MILITARY,Amount,,,int,,1,,,
+REQUIREMENT_CITY_LOCATION_MATCHES,X,,,int,,1,,,
+REQUIREMENT_CITY_LOCATION_MATCHES,Y,,,int,,1,,,
+REQUIREMENT_CITY_TRANSFER_TYPE_MATCHES,TransferType,,"BY_COMBAT, BY_GIFT, BY_LIBERATION, BY_CULTURAL_IDENTITY, BY_SETTLER",text,,0,,,
+REQUIREMENT_PLAYER_DEFAULT_DEFEAT,IgnoreCities,,"If set, the requirement will ignore checking the player's cities.",bool,false,0,,,
+REQUIREMENT_PLAYER_DEFAULT_DEFEAT,IgnoreUnits,,"If set, the requirement will ignore checking the player's units.",bool,false,0,,,
+REQUIREMENT_PLAYER_DEFAULT_DEFEAT,UnitType,,"If defined, the player must possess at least 1 'UnitType' or (if IgnoreCities is false) the player must possess at least one city.",database,UNIT_SETTLER,0,,,KIND_UNIT
+REQUIREMENT_PLAYER_LEADER_TAG_MATCHES,Tag,,,text,,1,,,
+REQUIREMENT_PLAYER_LEADER_TYPE_MATCHES,LeaderType,,,,,1,,,KIND_LEADER
+REQUIREMENT_PLOT_ADJACENT_BUILDING_TYPE_MATCHES,BuildingType,,,database,,1,,,KIND_BUILDING
+REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES,Tag,,The tag to match against.,text,,1,,,
+REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TAG_MATCHES,IncludeCenter,,Whether or not to include the center hex.,bool,true,0,,,
+REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES,UnitType,,The unit type to match against.  Includes replacement types but not base types.,database,,1,,,KIND_UNIT
+REQUIREMENT_PLOT_ADJACENT_FRIENDLY_UNIT_TYPE_MATCHES,IncludeCenter,,Whether or not to include the center hex.,bool,false,0,,,
+REQUIREMENT_PLOT_FEATURE_TYPE_MATCHES,FeatureType,,,database,,1,,,KIND_FEATURE
+REQUIREMENT_PLOT_NEAR_CAPITAL,MinDistance,,,int,0,1,,,
+REQUIREMENT_PLOT_NEAR_CAPITAL,MaxDistance,,,int,999,1,,,
+REQUIREMENT_PLOT_TERRAIN_CLASS_MATCHES,TerrainClass,,The terrain class expected.,database,,1,,,KIND_TERRAIN_CLASS
+REQUIREMENT_CITY_HAS_DISTRICT,DistrictType,,The type of the district to check for.,database,,1,,,KIND_DISTRICT
+REQUIREMENT_CITY_HAS_DISTRICT,ExactMatch,,Whether or not the district must be an exact match or if it can be a replacement district.,bool,false,0,,,
+REQUIREMENT_CITY_HAS_DISTRICT,MustBeFunctioning,,Require the district to be functioning (not pillaged).,bool,true,0,,,
+REQUIREMENT_CITY_HAS_X_SPECIALTY_DISTRICTS,Amount,,The provided amount.,int,0,0,,,
+REQUIREMENT_CITY_HAS_X_SPECIALTY_DISTRICTS,MustBeFunctioning,,Require the district to be functioning (not pillaged).,bool,true,0,,,
+REQUIREMENT_OPPONENT_ERA_AGE_MATCHES,Type,,"Type of Age: GOLDEN, DARK, NONE",text,NONE,1,,,
+REQUIREMENT_OPPONENT_ERA_AT_LEAST,MinimumEra,,,database,,1,,,KIND_ERA
+REQUIREMENT_PLOT_DISTRICT_TAG_MATCHES,Tag,,The tag to check that the district contains.,text,,1,,,
+REQUIREMENT_PLOT_DISTRICT_TAG_MATCHES,MustBeFunctioning,,Require the district be functioning (not pillaged).,bool,false,0,,,
+REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES,DistrictType,,The type of the district to check for.,database,,1,,,KIND_DISTRICT
+REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES,ExactMatch,,Whether or not the district must be an exact match or if it can be a replacement district.,bool,false,0,,,
+REQUIREMENT_PLOT_DISTRICT_TYPE_MATCHES,MustBeFunctioning,,Require the district be functioning (not pillaged).,bool,true,0,,,
+REQUIREMENT_PLOT_HAS_ANY_DISTRICT,MustBeFunctioning,,Require that the district be functioning (not pillaged).,bool,true,0,,,
+REQUIREMENT_PLOT_UNIT_CITY_HAS_ANY_DISTRICT,MustBeFunctioning,,Require that the district be functioning (not pillaged).,bool,true,0,,,
+REQUIREMENT_PLOT_UNIT_CITY_HAS_DISTRICT_SAME_OWNER,DistrictType,,The type of the district to check for.,database,,1,,,KIND_DISTRICT
+REQUIREMENT_PLOT_UNIT_CITY_HAS_DISTRICT_SAME_OWNER,ExactMatch,,Whether or not the district must be an exact match or if it can be a replacement district.,bool,false,0,,,
+REQUIREMENT_PLOT_UNIT_CITY_HAS_DISTRICT_SAME_OWNER,MustBeFunctioning,,Require that the district be functioning (not pillaged).,bool,true,0,,,

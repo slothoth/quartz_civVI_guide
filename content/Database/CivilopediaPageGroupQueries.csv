@@ -1,0 +1,8 @@
+RowId,SectionId,SQL,PageGroupIdColumn,NameColumn,TooltipColumn,VisibleIfEmptyColumn,SortIndexColumn,SortIndex
+1,BUILDINGS,"SELECT DistrictType as PageGroupId, Name, Description as Tooltip, 0 as VisibleIfEmpty, 0 as SortIndex from Districts",PageGroupId,Name,Tooltip,VisibleIfEmpty,SortIndex,10
+2,CIVICS,"SELECT EraType as PageGroupId, Name, Description as Tooltip, 1 as VisibleIfEmpty, ChronologyIndex as SortIndex from Eras",PageGroupId,Name,Tooltip,VisibleIfEmpty,SortIndex,10
+3,GREATPEOPLE,"SELECT GreatPersonClassType as PageGroupId, Name, null as Tooltip, 1 as VisibleIfEmpty, 0 as SortIndex from GreatPersonClasses",PageGroupId,Name,Tooltip,VisibleIfEmpty,SortIndex,10
+4,TECHNOLOGIES,"SELECT EraType as PageGroupId, Name, Description as Tooltip, 1 as VisibleIfEmpty, ChronologyIndex as SortIndex from Eras",PageGroupId,Name,Tooltip,VisibleIfEmpty,SortIndex,10
+5,UNITS,"SELECT FormationClassType as PageGroupId, Name, null as Tooltip, 1 as VisibleIfEmpty, 0 as SortIndex from UnitFormationClasses",PageGroupId,Name,Tooltip,VisibleIfEmpty,SortIndex,10
+6,UNITPROMOTIONS,"SELECT PromotionClassType as PageGroupId, Name, null as Tooltip, 1 as VisibleIfEmpty, 0 as SortIndex from UnitPromotionClasses",PageGroupId,Name,Tooltip,VisibleIfEmpty,SortIndex,20
+7,GOVERNORS,"SELECT GovernorType AS PageGroupId, printf(""{LOC_PEDIA_GOVERNORS_PAGEGROUP_PROMOTIONS_NAME << {%s}}"",ShortTitle) AS Name FROM Governors",PageGroupId,Name,,,,20

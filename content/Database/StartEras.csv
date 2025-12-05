@@ -1,0 +1,9 @@
+EraType,Gold,Faith,FirstTurnCivicChange,StartingPopulationCapital,StartingPopulationOtherCities,GrowthRate,ProductionRate,DistrictProductionRate,StartingMeleeStrengthMajor,StartingMeleeStrengthMinor,ObsoleteReligion,Tiles,Year,IgnoreGoodyHutTurn,StartingRangedStrengthMajor,StartingRangedStrengthMinor,StartingAmenitiesCapital,StartingHousingCapital,StartingAmenitiesOtherCities,StartingHousingOtherCities
+ERA_ANCIENT,10,0,0,1,1,0,0,0,20,25,0,0,-4000,0,0,0,0,0,0,0
+ERA_CLASSICAL,110,10,1,4,1,10,0,20,35,40,0,1,-1000,1,0,0,1,2,0,0
+ERA_MEDIEVAL,210,20,1,4,2,10,10,40,35,35,0,2,500,1,25,25,1,2,0,1
+ERA_RENAISSANCE,250,20,1,7,2,20,10,60,50,50,0,3,1350,1,40,40,3,5,0,1
+ERA_INDUSTRIAL,360,400,1,7,4,20,20,80,50,50,1,4,1725,1,40,40,3,5,1,2
+ERA_MODERN,485,800,1,10,4,30,20,100,50,50,1,5,1890,1,60,60,4,8,0,2
+ERA_ATOMIC,550,1600,1,10,6,30,30,120,70,70,1,6,1945,1,60,60,4,8,2,4
+ERA_INFORMATION,710,2400,1,13,6,40,30,140,70,70,1,7,1995,1,75,75,6,11,2,4

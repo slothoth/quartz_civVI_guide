@@ -1,0 +1,197 @@
+DataName,DefnId,DataType,NodeType,Required,RequiredGroup,Output,Modified,UserData,Automatic,Tagged,EnumList,UniqueId
+Max Failures,0,int,Concurrent,0,0,0,0,1,0,0,,1
+Exit on Success,1,bool,Concurrent,0,0,0,0,1,0,0,,2
+Looping,0,bool,Sequence,0,0,0,0,1,0,0,,3
+Desired Units,0,UnitTypesList,Add Goal Tech,0,1,0,0,0,0,0,,4
+Desired Buildings,1,BuildingTypesList,Add Goal Tech,0,1,0,0,0,0,0,,5
+Desired Improvements,2,ImprovementList,Add Goal Tech,0,1,0,0,0,0,0,,6
+Goal Plot to work,3,Map Point,Add Goal Tech,0,1,0,0,0,0,0,,7
+Desired Techs,4,TechTypeList,Add Goal Tech,0,1,0,0,0,0,0,,8
+Add Techs For All,5,bool,Add Goal Tech,0,0,0,0,1,0,0,,9
+Desired Civics,6,CivicsList,Add Goal Tech,0,1,0,0,0,0,0,,10
+Contract ID,7,ID List,Add Goal Tech,0,0,1,0,0,0,0,,11
+Tech Value,8,int,Add Goal Tech,0,0,0,0,0,0,0,,12
+Desired Units,0,UnitTypesList,Build Unit,0,1,0,0,0,0,0,,13
+Desired Buildings,1,BuildingTypesList,Build Unit,0,1,0,0,0,0,0,,14
+Required City(-1 for any city),2,int,Build Unit,0,0,0,0,1,0,1,,15
+Release Unit When Built,3,bool,Build Unit,0,0,0,0,1,0,0,,16
+Contract ID,4,int,Build Unit,0,0,1,0,0,0,0,,17
+Build Priority,5,int,Build Unit,0,0,0,0,1,0,0,,18
+Desired Districts,6,DistrictList,Build Unit,0,1,0,0,0,0,0,,19
+Desired Location,7,Map Point,Build Unit,0,0,0,0,0,0,0,,20
+Unit Value,8,int,Build Unit,0,0,0,0,0,0,0,,21
+Desired Units,0,UnitTypesList,Find Available Unit,0,1,0,0,0,0,0,,22
+Desired Location,1,Map Point,Find Available Unit,0,0,0,0,0,0,0,,23
+Found Unit,2,ID List,Find Available Unit,0,0,1,0,0,0,0,,24
+Upgradeable Units,3,bool,Find Available Unit,0,1,0,0,1,0,0,,25
+Unit Type,4,string,Find Available Unit,0,1,0,0,1,0,0,,26
+Data Payload,0,int,Notify Owner,0,0,0,0,0,0,0,,27
+Tribe,0,int,Barbarian Spawn Change,0,0,0,0,0,0,0,,28
+Spawn Rate,1,int,Barbarian Spawn Change,0,0,0,0,1,0,0,,29
+Raiding Party,2,bool,Barbarian Spawn Change,0,0,0,0,1,0,0,,30
+Behavior Tree,0,string,Run Behavior Tree,0,0,0,0,1,0,0,,31
+Behavior Tree Parent Tag,1,string,Run Behavior Tree,0,0,0,0,0,1,0,,32
+Move To (enum),0,int,Operation Move,0,0,0,0,1,0,0,,33
+Range to goal,1,int,Operation Move,0,0,0,0,1,0,0,,34
+Validate new units,2,bool,Operation Move,0,0,0,0,1,0,0,,35
+Unit distance,3,int,Operation Move,0,0,0,0,1,0,0,,36
+Leader Tag,4,string,Operation Move,0,0,0,0,1,0,0,,37
+AlwaysRunning,5,bool,Operation Move,0,0,0,0,1,0,0,,38
+Can Explore,6,bool,Operation Move,0,0,0,0,1,0,0,,39
+Trigger Units,0,UnitTypesList,Decode Trigger,0,1,1,0,0,0,0,,40
+Trigger Buildings,1,BuildingTypesList,Decode Trigger,0,1,1,0,0,0,0,,41
+Trigger Improvements,2,ImprovementList,Decode Trigger,0,1,1,0,0,0,0,,42
+Trigger District,3,DistrictList,Decode Trigger,0,1,1,0,0,0,0,,43
+Trigger City,4,int,Decode Trigger,0,1,1,0,0,0,0,,44
+Trigger Location,5,Map Point,Decode Trigger,0,1,1,0,0,0,0,,45
+Trigger Tech,6,TechTypeList,Decode Trigger,0,1,1,0,0,0,0,,46
+Trigger Civic,7,CivicsList,Decode Trigger,0,1,1,0,0,0,0,,47
+Trigger Value,8,int,Decode Trigger,0,0,1,0,0,0,0,,48
+Building List,0,BuildingTypesList,Choose City,0,0,0,0,0,0,0,,49
+City ID,1,int,Choose City,0,0,1,0,0,0,0,,50
+Needed District,2,DistrictList,Choose City,0,0,1,0,0,0,0,,51
+District Location,3,Map Point,Choose City,0,0,1,0,0,0,0,,52
+Building Location,4,Map Point,Choose City,0,0,1,0,0,0,0,,53
+Worker List,0,ID List,Build Improvement,0,0,0,0,0,0,0,,54
+Goal Plot,1,Map Point,Build Improvement,0,0,0,0,0,0,0,,55
+Improvements,2,ImprovementList,Build Improvement,0,0,0,0,0,0,0,,56
+Release when done,3,bool,Build Improvement,0,0,0,0,1,0,0,,57
+Builder Plot,4,Map Point,Build Improvement,0,0,0,0,0,0,0,,58
+Unit ID List,0,ID List,Move Unit,0,0,0,0,0,0,0,,59
+Location,1,Map Point,Move Unit,0,0,0,0,0,0,0,,60
+Release when done,2,bool,Move Unit,0,0,0,0,1,0,0,,61
+Allow Danger,3,bool,Move Unit,0,0,0,0,1,0,0,,62
+To Range,4,int,Move Unit,0,0,0,0,1,0,0,,63
+Required City,0,int,Purchase Plot,0,0,0,0,0,0,0,,64
+Plot,1,Map Point,Purchase Plot,0,0,0,0,0,0,0,,65
+Contract,2,int,Purchase Plot,0,0,1,0,0,0,0,,66
+Already in progress,0,bool,Recruit Units,0,0,0,0,1,0,0,,67
+Contract ID,1,int,Recruit Units,0,0,0,0,0,0,0,,68
+Recruit Range,2,int,Recruit Units,0,0,0,0,1,0,0,,69
+Allow creation,3,bool,Recruit Units,0,0,0,0,1,0,0,,70
+Recruit Value,4,int,Recruit Units,0,0,0,0,0,0,0,,71
+Time Limit,5,int,Recruit Units,0,0,0,0,1,0,0,,72
+Allow Stealing,6,bool,Recruit Units,0,0,0,0,1,0,0,,73
+Allow Levying,7,bool,Recruit Units,0,0,0,0,1,0,0,,74
+Attack Nearby Units,0,bool,Operation Attack Units,0,0,0,0,1,0,0,,75
+Attack Along March,1,bool,Operation Attack Units,0,0,0,0,1,0,0,,76
+Allow Unequal Attacks,2,bool,Operation Attack Units,0,0,0,0,1,0,0,,77
+Always Running,3,bool,Operation Attack Units,0,0,0,0,1,0,0,,78
+Attack Near Target,4,bool,Operation Attack Units,0,0,0,0,1,0,0,,79
+Input Improvements,0,ImprovementList,Choose Improvement,0,0,0,0,0,0,0,,80
+Builder List,1,UnitTypesList,Choose Improvement,0,0,1,0,0,0,0,,81
+Location,2,Map Point,Choose Improvement,0,0,1,0,0,0,0,,82
+Output Improvement,3,ImprovementList,Choose Improvement,0,0,1,0,0,0,0,,83
+Tribe Number,0,int,Barbarian Raid Check,0,0,0,0,0,0,0,,84
+Score,1,int,Barbarian Raid Check,0,0,0,0,1,0,0,,85
+Signal At Start,2,bool,Barbarian Raid Check,0,0,0,0,1,0,0,,86
+Low Difficulty,0,string,In Difficulty Range,0,1,0,0,1,0,0,,87
+High Difficulty,1,string,In Difficulty Range,0,1,0,0,1,0,0,,88
+Apply to opponent,2,bool,In Difficulty Range,0,0,0,0,1,0,0,,89
+Fail if Outside,3,bool,In Difficulty Range,0,0,0,0,1,0,0,,90
+Settler Unit,0,ID List,Settle,0,0,0,0,0,0,0,,91
+Plot To Check,0,Map Point,Check Plot,0,0,0,0,0,0,0,,92
+Building Districts,1,DistrictList,Check Plot,0,1,0,0,0,0,0,,93
+Building Wonders,2,BuildingTypesList,Check Plot,0,1,0,0,0,0,0,,94
+Building Improvements,3,ImprovementList,Check Plot,0,1,0,0,0,0,0,,95
+Resource Harvesting,4,bool,Check Plot,0,0,1,0,0,0,0,,96
+Builder List,5,UnitTypesList,Check Plot,0,0,1,0,0,0,0,,97
+Plot To Move,6,Map Point,Check Plot,0,0,1,0,0,0,0,,98
+Builder List,0,ID List,Clear Plot,0,0,0,0,0,0,0,,99
+Release on Complete,1,bool,Clear Plot,0,0,0,0,1,0,0,,100
+Plot To Clear,2,Map Point,Clear Plot,0,0,0,0,0,0,0,,101
+Resource Harvesting,3,bool,Clear Plot,0,0,0,0,0,0,0,,102
+Tribe,0,int,Barbarian Recruit,0,0,0,0,0,0,0,,103
+Num Melee,1,int,Barbarian Recruit,0,1,0,0,1,0,0,,104
+Num Ranged,2,int,Barbarian Recruit,0,1,0,0,1,0,0,,105
+Num Siege,3,int,Barbarian Recruit,0,1,0,0,1,0,0,,106
+Num Support,4,int,Barbarian Recruit,0,1,0,0,1,0,0,,107
+Raiding Party,5,bool,Barbarian Recruit,0,0,0,0,1,0,0,,108
+Turns to Run,0,int,Interval,0,0,0,0,1,0,0,,109
+AutoProtect Percentage,0,int,Operation Defend Units,0,0,0,0,1,0,0,,110
+Protect Outside Range,1,int,Operation Defend Units,0,0,0,0,1,0,0,,111
+Turns to Run,0,int,Turn Limiter,0,0,0,0,1,0,0,,112
+Fail at Limit,1,bool,Turn Limiter,0,0,0,0,1,0,0,,113
+Limit Is Min,2,bool,Turn Limiter,0,0,0,0,1,0,0,,114
+Backup Amount,0,float,Operation Change Target,0,0,0,0,1,0,0,,115
+Failure Amount,1,float,Operation Change Target,0,0,0,0,1,0,0,,116
+Fail on Invalid Team,2,bool,Operation Change Target,0,0,0,0,1,0,0,,117
+Required Tag,3,string,Operation Change Target,0,0,0,0,1,0,0,,118
+Always Swap,4,bool,Operation Change Target,0,0,0,0,1,0,0,,119
+Contract,0,int,Contract Manager Decorator,0,1,0,0,0,0,0,,120
+Multi-Contracts,1,ID List,Contract Manager Decorator,0,1,0,0,0,0,0,,121
+Turn Limit,2,int,Contract Manager Decorator,0,0,0,0,1,0,0,,122
+Block While Running,3,bool,Contract Manager Decorator,0,0,0,0,1,0,0,,123
+Turns Remaining,4,int,Contract Manager Decorator,0,0,0,0,1,0,0,,124
+Unused,0,int,Operation Attack City,0,0,0,0,1,0,0,,125
+Destroy Formations,0,bool,Make Formation,0,0,0,0,1,0,0,,126
+Combat Unit,1,string,Make Formation,0,1,0,0,1,0,0,,127
+Civilian Unit,2,string,Make Formation,0,1,0,0,1,0,0,,128
+Support Unit,3,string,Make Formation,0,1,0,0,1,0,0,,129
+Naval Unit,4,string,Make Formation,0,1,0,0,1,0,0,,130
+Unit List,0,ID List,Protect Unit,0,0,0,0,0,0,0,,131
+Damage Percentage,1,float,Protect Unit,0,0,0,0,1,0,0,,132
+Preferred Type,0,string,City Attack,0,0,0,0,1,0,0,,133
+Plot to reserve,0,Map Point,Reserve Plot,0,0,0,0,0,0,0,,134
+City,1,int,Reserve Plot,0,0,0,0,0,0,0,,135
+Value,2,int,Reserve Plot,0,0,0,0,0,0,0,,136
+Tag,3,string,Reserve Plot,0,0,0,0,1,0,0,,137
+Pillage Districts,0,bool,Operation Pillage,0,0,0,0,1,0,0,,138
+Pillage Improvements,1,bool,Operation Pillage,0,0,0,0,1,0,0,,139
+Get Goody Huts,2,bool,Operation Pillage,0,0,0,0,1,0,0,,140
+Unused,0,int,Operation Siege City,0,0,0,0,0,0,0,,141
+Unused,0,int,Garrison City,0,0,0,0,0,0,0,,142
+Unused,0,int,Is City Threatened,0,0,0,0,0,0,0,,143
+Minimum Number,0,int,Is At War,0,0,0,0,1,0,0,,144
+Include Barbarian,1,bool,Is At War,0,0,0,0,1,0,0,,145
+With Operation Target,2,bool,Is At War,0,0,0,0,1,0,0,,146
+Skip For Minors,3,bool,Is At War,0,0,0,0,1,0,0,,147
+Nearest Owned City,0,bool,Find Unit Targets,0,0,0,0,1,0,0,,148
+Needed District,1,DistrictList,Find Unit Targets,0,0,0,0,0,0,0,,149
+Needs Buildings,2,BuildingTypesList,Find Unit Targets,0,0,0,0,0,0,0,,150
+Contract Value,3,int,Find Unit Targets,0,0,0,0,0,0,0,,151
+Can Delete,0,bool,Upgrade Units,0,0,0,0,0,0,0,,152
+Great Person Type,0,string,Has Great Person,0,0,0,0,1,0,0,,153
+Unused,0,string,Use Great Person,0,0,0,0,0,0,0,,154
+Contract,0,int,Cancel Contract,0,0,0,0,0,0,0,,155
+Lock Units,0,bool,Lock Units,0,0,0,0,1,0,0,,156
+Signal Readiness,1,bool,Lock Units,0,0,0,0,1,0,0,,157
+Desires Denouncement,0,bool,Operation Diplomacy,0,1,0,0,1,0,0,,158
+Had Denounced,1,bool,Operation Diplomacy,0,1,0,0,1,0,0,,159
+Desires War,2,bool,Operation Diplomacy,0,1,0,0,1,0,0,,160
+Is At War,3,bool,Operation Diplomacy,0,1,0,0,1,0,0,,161
+Present Value,4,int,Operation Diplomacy,0,0,0,0,0,0,0,,162
+Contract,5,int,Operation Diplomacy,0,0,0,0,0,0,0,,163
+Operation,0,int,SPY: Choose Mission,0,0,0,0,0,0,0,,164
+Minimum Odds,1,int,SPY: Choose Mission,0,0,0,0,1,0,0,,165
+Operation,0,int,SPY: Do Operation,0,0,0,0,0,0,0,,166
+Allow Gain Sources,1,bool,SPY: Do Operation,0,0,0,0,1,0,0,,167
+Minimum Odds,2,int,SPY: Do Operation,0,0,0,0,1,0,0,,168
+Destination,0,Map Point,SPY: Travel,0,1,0,0,0,0,0,,169
+Go Home,1,bool,SPY: Travel,0,1,0,0,1,0,0,,170
+Relic Plot,0,Map Point,ARCHAEOLOGY: Dig,0,0,0,0,0,0,0,,171
+Move Point enum,0,int,Operation Naval Escort,0,0,0,0,1,0,0,,172
+Fail if none,0,bool,Has Player Ability,0,0,0,0,1,0,0,,173
+Builders make wonders,1,bool,Has Player Ability,0,1,0,0,1,0,0,,174
+Builders make districts,2,bool,Has Player Ability,0,1,0,0,1,0,0,,175
+Location,0,Map Point,Build Production,0,0,0,0,0,0,0,,176
+Release When Done,1,bool,Build Production,0,0,0,0,0,0,0,,177
+Unused,0,int,Has Inquisition,0,0,0,0,0,0,0,,178
+Apostle,0,ID List,Launch Inquisition,0,0,0,0,0,0,0,,179
+Target Units,0,bool,Operation Launch nuke,0,0,0,0,1,0,0,,180
+Unused,0,int,Operation Is Ready,0,0,0,0,0,0,0,,181
+Defensive Improvement,0,bool,Build Military Improvement,0,0,0,0,1,0,0,,182
+Specific Improvement,1,string,Build Military Improvement,0,0,0,0,1,0,0,,183
+Improvement Priority (1-3),0,int,Operation Air Assault,0,0,0,0,1,0,0,,184
+Combat District Priority (1-3),1,int,Operation Air Assault,0,0,0,0,1,0,0,,185
+Passive District Priority (1-3),2,int,Operation Air Assault,0,0,0,0,1,0,0,,186
+Bomber Unit Type,3,string,Operation Air Assault,0,0,0,0,1,0,0,,187
+Present Value,4,int,Operation Air Assault,0,0,0,0,0,0,0,,188
+Target Domain,0,string,Naval Choose Target,0,0,0,0,1,0,0,,189
+Fail for no target,1,bool,Naval Choose Target,0,0,0,0,1,0,0,,190
+Unused,0,string,Naval Pillage,0,0,0,0,1,0,0,,191
+Range,0,int,Is Near Fallout,0,0,0,0,1,0,0,,192
+Script Function,0,string,LUA Script Condition,0,0,0,0,1,0,0,,193
+Unused,0,string,Operation Military Formation,0,0,0,0,1,0,0,,194
+Unused,0,string,Use Scripted Command,0,0,0,0,1,0,0,,195
+Next Plot,0,Map Point,Railroad Target,0,0,0,0,0,0,0,,196

@@ -1,0 +1,13 @@
+While Firaxis has enabled a lot of interesting mods with their editable Database , Effects system, and Lua scripting system, there are those who want to go even further. For example, being able to work tiles more than 3 tiles from a city centre is something that is so out there, it cannot be achieved via database modding, and is fraught with bugs attempting to simulate it in Lua. To that end, people have made mods where they edit the compiled C++ code that is obfuscated for us end-users.
+
+There are very good reasons why DLL mods are potentially risky things to install, and good reasons why said code is obfuscated. The C++ section of the game handles things like I/O, so saving and loading files. This sounds innocent, until someone makes a malicious mod that saves over your system32 folder, or loads your passwords file into memory and emails it to someone. 
+
+But there are also very valuable insights that can be garnered from looking directly at source code. A lot of systems in this game have been discovered through vigorous testing rather than direct knowledge, and source code gives us a proper source of truth as to how mechanics work.
+
+Sadly, we don't have source code, which was released for Civ V, but not Civ VI, and probably never will be, given that the new entry is out. So we have to make do with decompiled code, which can be thought of as a step up from ones and zeroes, but not half as good as commented, clean code. Instead its the assembly instructions, meaning no variables are named, and its a total mess of jump-tables.
+
+Getting a copy of this decompiled code is not easy either. Firaxis accidentally leaks the debug symbols in several Steam depot releases, which can be thought of as a "key" that unscrambles the .dll to allow it to be read by a debugger. But I believe these have all been taken down. In addition, you would need to use a tool used by security experts like IDA Pro, or Ghidra (which is free) to use those debug keys to unscramble it. More information available [here](https://github.com/Wild-W/CivilizationVI_CommunityExtension/wiki/Contributor's-Guide#contributors-guide). 
+
+Still, some enterprising modders have made some interesting mods from doing that, such the [Civ VI Community Extension](https://github.com/Wild-W/CivilizationVI_CommunityExtension), which is used by RomanHoliday's AI mod, in part to improve World Congress decisions.
+
+One good use of it is if you are modding and are getting an Unhandled exception, I have in my day been saved using this to identify causes of bugs I never would have guessed in my mod, you can see how to do that [[Debugging Unhandled Exceptions|here]]

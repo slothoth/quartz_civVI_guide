@@ -1,0 +1,6 @@
+ShapeName,ShapeId,MinChildren,MaxChildren,Description
+Selector Nodes,0,1,0,Selector nodes have one or more children and run through them until meeting some condition or completing them all
+Action Nodes,1,0,0,Action nodes can take an action that has an effect on the game logic
+Decision Nodes,2,0,0,"Decision nodes can never return running, and can output data to be used by other behavior tree nodes"
+Decorator Nodes,3,1,1,Decorator nodes have a single child and effects when/how it runs
+Sub-tree Nodes,4,0,1,Sub-trees are references to other trees defined elsewhere in the behavior tree list

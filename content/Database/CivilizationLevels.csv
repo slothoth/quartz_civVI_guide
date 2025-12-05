@@ -1,0 +1,5 @@
+CivilizationLevelType,CanFoundCities,CanAnnexTilesWithCulture,CanAnnexTilesWithGold,CanAnnexTilesWithReceivedInfluence,CanEarnGreatPeople,CanGiveInfluence,CanReceiveInfluence,StartingTilesForCity,CanBuildWonders,IgnoresUnitStrategicResourceRequirements
+CIVILIZATION_LEVEL_TRIBE,0,0,0,0,0,0,0,0,0,1
+CIVILIZATION_LEVEL_CITY_STATE,0,0,0,1,0,0,1,5,0,1
+CIVILIZATION_LEVEL_FULL_CIV,1,1,1,0,1,1,0,6,1,0
+CIVILIZATION_LEVEL_FREE_CITIES,0,0,0,0,0,0,0,0,0,0

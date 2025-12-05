@@ -1,0 +1,74 @@
+NodeType,NodeId,ShapeId,Description
+Concurrent,0,0,Logical And node. Runs all children until it reaches a FAILURE (can allow multiple failures if desired.)
+Priority,1,0,Logical Or node. Runs all children until it reaches a SUCCESS or RUNNING
+Sequence,2,0,"Special logical And node. Stops on FAILURE, but also stops on RUNNING. Resumes next turn on RUNNING node."
+Add Goal Tech,3,1,"Given a list of units, buildings, or techs, asks Research AI to work on them"
+Build Unit,4,1,"Given a list of units and/or buildings and a city, builds 'best' unit at the city when queue is availble."
+Find Available Unit,5,2,"Given a list of units, finds first unit of matching type that can get to location"
+Notify Owner,6,1,"Sends notice back to the owning player or any other listener, with an optional integral payload."
+Barbarian Spawn Change,7,1,Change the spawn rate of a barbarian tribe to prepare for raid/invasion.
+Run Behavior Tree,8,4,"DEPRECATED - DO NOT USE. Runs a behavior tree defined elsewhere. You can change data for that sub-tree, but not its structure."
+Operation Move,9,1,Moves operation to the rally point.
+Decode Trigger,10,2,For temporary trees only. Take the trigger you want to meet and extract information for use elsewhere.
+Choose City,11,2,"Given a list of buildings, pick the best city to make a building. Output city and needed improvement."
+Build Improvement,12,1,"Given a worker, location, and improvement, build the improvement."
+Move Unit,13,1,"Given a unit ID and a location, give the unit a move order. Report RUNNING until it reaches destination."
+Operation Attack,14,1,"As part of an operation, attack the target."
+Not,15,3,Decorator that turns SUCCESS and RUNNING to FAILURE and vice versa. Does not reverse ERROR.
+Purchase Plot,16,1,Purchase a plot for a city.
+Recruit Units,17,2,Recruit units for a defined operation. OPERATION USE ONLY.
+Operation Attack Units,18,1,"As part of an operation, attack enemy units during a move."
+Choose Improvement,19,2,"Given a list of improvement types, chooses a specific improvement to build, preferably around a city"
+Barbarian Raid Check,20,2,Check the score of a barbarian raid
+In Difficulty Range,21,3,"Decorator that runs if owner's difficulty is within range. Optionally target difficulty, optionally fail if outside."
+Settle,22,1,Tells a unit to perform the settle action. FAILS if no unit is able to do so.
+Check Plot,23,2,Checks if you can build the requested building or district on that location. Outputs an offending resource or feature if it fails
+Clear Plot,24,1,Orders a unit to clear the current tile. FAILS if no unit is able to do so.
+Barbarian Recruit,25,2,Recruit members from a tribe for a raid or invasion.
+Interval,26,3,Lets a child run for n turns before rechecking it
+Operation Defend Units,27,1,"As part of an operation, protect your units that might otherwise be destroyed."
+Turn Limiter,28,3,Only lets a child node run for a limited number of turns before failing.
+Operation Change Target,29,1,"As part of an operation, if you can't take the current target, find a new one or give up."
+Contract Manager Decorator,30,3,"Manages a contract, can limit turns until it is run."
+Operation Attack City,31,1,"As part of an operation, attack a city"
+Make Formation,32,1,Create (or destroy) a formation of units
+Protect Unit,33,1,Keep a non-operation unit safe if its health is below specified fraction
+City Attack,34,1,"Cities attack enemy units within range, with preferences as described (none required)"
+Reserve Plot,35,2,Reserve a city plot so that other trees will leave it alone
+Operation Pillage,36,1,Pillage nearby improvements and districts
+Operation Siege City,37,1,Pillage nearby improvements and districts
+Garrison City,38,1,"As part of an operation, garrison a unit in a friendly city"
+Is City Threatened,39,2,Tell if city that is operation target is still threatened
+Is At War,40,2,Tell if player is at war
+Find Unit Targets,41,2,Find places for all owned units to go
+Upgrade Units,42,1,Upgrade any upgradeable units
+Has Great Person,43,2,Succeeds if the tree has a great person of the appropriate type
+Use Great Person,44,1,"Uses the great person ability, including founding a religion"
+Cancel Contract,45,2,Cancel a tagged contract
+Lock Units,46,2,Allow / disallow units to be recruited off the team
+Operation Diplomacy,47,1,Diplomatic actions and tests
+SPY: Choose Mission,48,2,Choose a spy mission for the spy's current city
+SPY: Do Operation,49,1,Execute the spy's current mission
+SPY: Travel,50,1,Move the spy to the chosen city (or home)
+ARCHAEOLOGY: Dig,51,1,Have an archaeologist dig at the specified location
+ARCHAEOLOGY: Donate,52,1,An archaeologist moves to his home and donates any carried artifact to his museum
+Operation Naval Escort,53,1,Recruit naval escorts to an operation and ferry units across the waters
+Has Player Ability,54,3,Decorator that checks for player ability before handing control to child
+Build Production,55,1,Use a builder charge to accelerate a wonder or district (if allowed)
+Has Inquisition,56,2,Returns true if the specified player has launched an inquisition
+Launch Inquisition,57,1,"Launches an inquisition using an attached unit, if possible"
+Will use nukes,58,2,Checks if the AI is willing to use nukes against his opponent (Gandhi always will)
+Operation Launch nuke,59,1,Launch nuke at target
+Operation Is Ready,60,2,Checks if the associated operation is ready
+Build Military Improvement,61,1,Build an improvement outside your own territory (usually in an operation)
+Operation Air Assault,62,1,Launcher bombers against target city
+Naval Choose Target,63,3,"Choose a naval superiority target. If none available, don't run child."
+Naval Patrol,64,1,Choose a naval patrol target and move accordingly.
+Naval Pillage,65,1,Opportunistically attack districts and land units (naval raiding to come).
+Has Valid Target,66,2,Checks that unit assigned target remains valid. Removes units with invalid targets from tree.
+Can Alpha City,67,2,For shortcutting a city attack. Check if you can do 50%+ garrison damage or defense units are worth ignoring.
+Is Near Fallout,69,2,Returns true if any unit is within range of fallout and puts all such members in the Endangered list (if there is an operation)
+LUA Script Condition,70,2,Run a lua script function that returns a boolean value. Only the player is passed in to the script
+Operation Military Formation,71,1,"Within an operation, attempt to combine units into corps and armies"
+Use Scripted Command,72,1,"If they have an available scripted command, try to use it"
+Railroad Target,68,2,Finds the next hex that needs a railroad to build a road between cities

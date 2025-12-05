@@ -1,0 +1,22 @@
+TeamName,OperationName,MinUnits,MaxUnits,InitialStrengthAdvantage,OngoingStrengthAdvantage,SafeRallyPoint,Condition
+Simple Early Attack Force,Attack Barb Camp,1,-1,0.0,0.5,0,
+Simple Early Attack Force,Barb Camp Tech Boost,1,-1,0.0,1.0,0,
+Simple City Attack Force,Attack Enemy City,1,-1,1.5,3.0,0,
+City Naval Attack Force,Attack Enemy City,1,-1,-5.0,2.0,0,IsCoastalTarget
+Simple City Attack Force,Wartime Attack Enemy City,1,-1,0.5,3.0,0,
+City Naval Attack Force,Wartime Attack Enemy City,1,-1,-5.0,2.0,0,IsCoastalTarget
+City Attack Force,Attack Walled City,1,-1,2.0,4.0,0,
+City Naval Attack Force,Attack Walled City,1,-1,-5.0,3.0,0,IsCoastalTarget
+City Attack Force,Wartime Attack Walled City,1,-1,1.0,6.0,0,
+City Naval Attack Force,Wartime Attack Walled City,1,-1,-5.0,3.0,0,IsCoastalTarget
+Barbarian Builder Capture,Barbarian Builder Capture,1,-1,0.0,0.5,0,
+Civilian Builder Capture,Civilian Builder Capture,1,-1,0.0,0.5,0,
+Settle City Team,Settle New City,1,-1,0.0,1.0,1,
+City Defense,City Defense,1,-1,-1.0,1.0,0,
+City Naval Defense,City Defense,1,-1,-5.0,1.0,0,IsCoastalTarget
+Barbarian Raid,Barbarian Attack,1,-1,-1.0,-1.0,0,
+Barbarian Raid,Barbarian City Assault,1,-1,-1.0,-1.0,0,
+Nuclear Attack,Nuclear Assault,1,-1,-1.0,0.0,0,
+Aid Ally Attack Force,Aid Ally,1,-1,-2.0,0.0,0,
+Naval Superiority Force,Naval Superiority,1,-1,0.0,3.0,0,
+Free Cities Assault Force,Free Cities Raid,1,-1,-40.0,0.0,0,

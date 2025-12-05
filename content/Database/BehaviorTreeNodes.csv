@@ -1,0 +1,595 @@
+TreeName,NodeId,JumpTo,NodeType,PrimaryKey
+Barbarian City Attack,0,26,Concurrent,1
+Barbarian City Attack,1,0,Operation Defend Units,2
+Barbarian City Attack,2,26,Sequence,3
+Barbarian City Attack,3,0,Decode Trigger,4
+Barbarian City Attack,4,11,Sequence,5
+Barbarian City Attack,5,0,Barbarian Spawn Change,6
+Barbarian City Attack,6,10,Priority,7
+Barbarian City Attack,7,9,Turn Limiter,8
+Barbarian City Attack,8,0,Barbarian Recruit,9
+Barbarian City Attack,9,0,Barbarian Spawn Change,10
+Barbarian City Attack,10,0,Barbarian Spawn Change,11
+Barbarian City Attack,11,14,Concurrent,12
+Barbarian City Attack,12,0,Make Formation,13
+Barbarian City Attack,13,0,Operation Move,14
+Barbarian City Attack,14,18,Concurrent,15
+Barbarian City Attack,15,0,Operation Attack Units,16
+Barbarian City Attack,16,0,Make Formation,17
+Barbarian City Attack,17,0,Operation Move,18
+Barbarian City Attack,18,25,Concurrent,19
+Barbarian City Attack,19,0,Operation Siege City,20
+Barbarian City Attack,20,0,Operation Attack City,21
+Barbarian City Attack,21,0,Operation Attack Units,22
+Barbarian City Attack,22,0,Make Formation,23
+Barbarian City Attack,23,0,Operation Pillage,24
+Barbarian City Attack,24,0,Operation Move,25
+Barbarian City Attack,25,0,Notify Owner,26
+Barbarian Found City,0,6,Sequence,27
+Barbarian Found City,1,0,Decode Trigger,28
+Barbarian Found City,2,5,Concurrent,29
+Barbarian Found City,3,0,Protect Unit,30
+Barbarian Found City,4,0,Move Unit,31
+Barbarian Found City,5,0,Notify Owner,32
+Build City Building,0,6,Sequence,33
+Build City Building,1,0,Decode Trigger,34
+Build City Building,2,4,Contract Manager Decorator,35
+Build City Building,3,0,Add Goal Tech,36
+Build City Building,4,6,Contract Manager Decorator,37
+Build City Building,5,0,Build Unit,38
+Build City District,0,35,Sequence,39
+Build City District,1,0,Decode Trigger,40
+Build City District,2,9,Concurrent,41
+Build City District,3,7,Sequence,42
+Build City District,4,6,Contract Manager Decorator,43
+Build City District,5,0,Purchase Plot,44
+Build City District,6,0,Reserve Plot,45
+Build City District,7,9,Contract Manager Decorator,46
+Build City District,8,0,Add Goal Tech,47
+Build City District,9,35,Sequence,48
+Build City District,10,22,Priority,49
+Build City District,11,0,Check Plot,50
+Build City District,12,22,Sequence,51
+Build City District,13,15,Contract Manager Decorator,52
+Build City District,14,0,Add Goal Tech,53
+Build City District,15,22,Priority,54
+Build City District,16,0,Find Available Unit,55
+Build City District,17,20,Concurrent,56
+Build City District,18,0,Protect Unit,57
+Build City District,19,0,Move Unit,58
+Build City District,20,0,Clear Plot,59
+Build City District,21,0,Reserve Plot,60
+Build City District,22,35,Concurrent,61
+Build City District,23,25,Contract Manager Decorator,62
+Build City District,24,0,Build Unit,63
+Build City District,25,35,Has Player Ability,64
+Build City District,26,35,Contract Manager Decorator,65
+Build City District,27,35,Sequence,66
+Build City District,28,33,Priority,67
+Build City District,29,0,Find Available Unit,68
+Build City District,30,32,Contract Manager Decorator,69
+Build City District,31,0,Build Unit,70
+Build City District,32,0,Cancel Contract,71
+Build City District,33,0,Move Unit,72
+Build City District,34,0,Build Production,73
+Build City Improvement,0,29,Sequence,74
+Build City Improvement,1,0,Decode Trigger,75
+Build City Improvement,2,29,Sequence,76
+Build City Improvement,3,19,Concurrent,77
+Build City Improvement,4,0,Reserve Plot,78
+Build City Improvement,5,7,Contract Manager Decorator,79
+Build City Improvement,6,0,Add Goal Tech,80
+Build City Improvement,7,19,Priority,81
+Build City Improvement,8,0,Check Plot,82
+Build City Improvement,9,19,Sequence,83
+Build City Improvement,10,14,Priority,84
+Build City Improvement,11,0,Find Available Unit,85
+Build City Improvement,12,14,Contract Manager Decorator,86
+Build City Improvement,13,0,Build Unit,87
+Build City Improvement,14,0,Cancel Contract,88
+Build City Improvement,15,18,Concurrent,89
+Build City Improvement,16,0,Protect Unit,90
+Build City Improvement,17,0,Move Unit,91
+Build City Improvement,18,0,Clear Plot,92
+Build City Improvement,19,29,Sequence,93
+Build City Improvement,20,24,Priority,94
+Build City Improvement,21,0,Find Available Unit,95
+Build City Improvement,22,24,Contract Manager Decorator,96
+Build City Improvement,23,0,Build Unit,97
+Build City Improvement,24,0,Cancel Contract,98
+Build City Improvement,25,28,Concurrent,99
+Build City Improvement,26,0,Protect Unit,100
+Build City Improvement,27,0,Move Unit,101
+Build City Improvement,28,0,Build Improvement,102
+Build Trigger Building,0,21,Sequence,103
+Build Trigger Building,1,0,Decode Trigger,104
+Build Trigger Building,2,0,Add Goal Tech,105
+Build Trigger Building,3,0,Choose City,106
+Build Trigger Building,4,6,Contract Manager Decorator,107
+Build Trigger Building,5,0,Purchase Plot,108
+Build Trigger Building,6,0,Reserve Plot,109
+Build Trigger Building,7,19,Priority,110
+Build Trigger Building,8,0,Check Plot,111
+Build Trigger Building,9,19,Sequence,112
+Build Trigger Building,10,0,Add Goal Tech,113
+Build Trigger Building,11,15,Priority,114
+Build Trigger Building,12,0,Find Available Unit,115
+Build Trigger Building,13,15,Contract Manager Decorator,116
+Build Trigger Building,14,0,Build Unit,117
+Build Trigger Building,15,18,Concurrent,118
+Build Trigger Building,16,0,Protect Unit,119
+Build Trigger Building,17,0,Move Unit,120
+Build Trigger Building,18,0,Clear Plot,121
+Build Trigger Building,19,21,Contract Manager Decorator,122
+Build Trigger Building,20,0,Build Unit,123
+Build Trigger Improvement,0,24,Sequence,124
+Build Trigger Improvement,1,0,Decode Trigger,125
+Build Trigger Improvement,2,0,Choose Improvement,126
+Build Trigger Improvement,3,5,Turn Limiter,127
+Build Trigger Improvement,4,0,Add Goal Tech,128
+Build Trigger Improvement,5,16,Priority,129
+Build Trigger Improvement,6,0,Check Plot,130
+Build Trigger Improvement,7,16,Sequence,131
+Build Trigger Improvement,8,12,Priority,132
+Build Trigger Improvement,9,0,Find Available Unit,133
+Build Trigger Improvement,10,12,Contract Manager Decorator,134
+Build Trigger Improvement,11,0,Build Unit,135
+Build Trigger Improvement,12,15,Concurrent,136
+Build Trigger Improvement,13,0,Protect Unit,137
+Build Trigger Improvement,14,0,Move Unit,138
+Build Trigger Improvement,15,0,Clear Plot,139
+Build Trigger Improvement,16,20,Priority,140
+Build Trigger Improvement,17,0,Find Available Unit,141
+Build Trigger Improvement,18,20,Contract Manager Decorator,142
+Build Trigger Improvement,19,0,Build Unit,143
+Build Trigger Improvement,20,23,Concurrent,144
+Build Trigger Improvement,21,0,Protect Unit,145
+Build Trigger Improvement,22,0,Move Unit,146
+Build Trigger Improvement,23,0,Build Improvement,147
+Build Trigger Unit,0,6,Sequence,148
+Build Trigger Unit,1,0,Decode Trigger,149
+Build Trigger Unit,2,4,Turn Limiter,150
+Build Trigger Unit,3,0,Add Goal Tech,151
+Build Trigger Unit,4,6,Contract Manager Decorator,152
+Build Trigger Unit,5,0,Build Unit,153
+Civ Royale Behavior,0,24,Concurrent,154
+Civ Royale Behavior,1,0,Operation Change Target,155
+Civ Royale Behavior,2,0,Recruit Units,156
+Civ Royale Behavior,3,24,Priority,157
+Civ Royale Behavior,4,12,Sequence,158
+Civ Royale Behavior,5,0,LUA Script Condition,159
+Civ Royale Behavior,6,12,Concurrent,160
+Civ Royale Behavior,7,0,Operation Defend Units,161
+Civ Royale Behavior,8,0,Use Scripted Command,162
+Civ Royale Behavior,9,0,Operation Launch nuke,163
+Civ Royale Behavior,10,0,Operation Attack Units,164
+Civ Royale Behavior,11,0,Operation Move,165
+Civ Royale Behavior,12,24,Concurrent,166
+Civ Royale Behavior,13,0,Operation Pillage,167
+Civ Royale Behavior,14,18,Priority,168
+Civ Royale Behavior,15,17,Not,169
+Civ Royale Behavior,16,0,Is Near Fallout,170
+Civ Royale Behavior,17,0,Operation Defend Units,171
+Civ Royale Behavior,18,0,Make Formation,172
+Civ Royale Behavior,19,0,Use Scripted Command,173
+Civ Royale Behavior,20,0,Operation Launch nuke,174
+Civ Royale Behavior,21,0,Operation Pillage,175
+Civ Royale Behavior,22,0,Operation Attack Units,176
+Civ Royale Behavior,23,0,Operation Move,177
+Early City Assault,0,55,Concurrent,178
+Early City Assault,1,0,Decode Trigger,179
+Early City Assault,2,5,Priority,180
+Early City Assault,3,0,Can Alpha City,181
+Early City Assault,4,0,Operation Defend Units,182
+Early City Assault,5,0,Operation Change Target,183
+Early City Assault,6,55,Sequence,184
+Early City Assault,7,14,Concurrent,185
+Early City Assault,8,12,Priority,186
+Early City Assault,9,0,Operation Is Ready,187
+Early City Assault,10,12,Contract Manager Decorator,188
+Early City Assault,11,0,Recruit Units,189
+Early City Assault,12,0,Operation Attack Units,190
+Early City Assault,13,0,Operation Move,191
+Early City Assault,14,0,Lock Units,192
+Early City Assault,15,0,Operation Diplomacy,193
+Early City Assault,16,24,Turn Limiter,194
+Early City Assault,17,24,Priority,195
+Early City Assault,18,0,Is At War,196
+Early City Assault,19,24,Concurrent,197
+Early City Assault,20,0,Operation Change Target,198
+Early City Assault,21,0,Recruit Units,199
+Early City Assault,22,0,Operation Attack Units,200
+Early City Assault,23,0,Operation Move,201
+Early City Assault,24,32,Priority,202
+Early City Assault,25,0,Is At War,203
+Early City Assault,26,32,Turn Limiter,204
+Early City Assault,27,32,Concurrent,205
+Early City Assault,28,30,Contract Manager Decorator,206
+Early City Assault,29,0,Operation Diplomacy,207
+Early City Assault,30,0,Operation Attack Units,208
+Early City Assault,31,0,Operation Move,209
+Early City Assault,32,41,Turn Limiter,210
+Early City Assault,33,41,Concurrent,211
+Early City Assault,34,0,Is At War,212
+Early City Assault,35,0,Operation Change Target,213
+Early City Assault,36,0,Recruit Units,214
+Early City Assault,37,0,Operation Attack Units,215
+Early City Assault,38,0,Operation Pillage,216
+Early City Assault,39,0,Operation Siege City,217
+Early City Assault,40,0,Operation Move,218
+Early City Assault,41,55,Concurrent,219
+Early City Assault,42,0,Operation Change Target,220
+Early City Assault,43,0,Recruit Units,221
+Early City Assault,44,48,Priority,222
+Early City Assault,45,47,Not,223
+Early City Assault,46,0,Can Alpha City,224
+Early City Assault,47,0,Operation Attack City,225
+Early City Assault,48,0,Operation Attack Units,226
+Early City Assault,49,0,Operation Pillage,227
+Early City Assault,50,0,Operation Siege City,228
+Early City Assault,51,0,Build Military Improvement,229
+Early City Assault,52,0,Operation Attack City,230
+Early City Assault,53,0,Operation Pillage,231
+Early City Assault,54,0,Operation Move,232
+Escort Worker To Camp,0,9,Sequence,233
+Escort Worker To Camp,1,0,Make Formation,234
+Escort Worker To Camp,2,0,Operation Change Target,235
+Escort Worker To Camp,3,7,Concurrent,236
+Escort Worker To Camp,4,0,Operation Is Ready,237
+Escort Worker To Camp,5,0,Operation Defend Units,238
+Escort Worker To Camp,6,0,Operation Move,239
+Escort Worker To Camp,7,0,Make Formation,240
+Escort Worker To Camp,8,0,Operation Move,241
+Free Cities Assault,0,16,Sequence,242
+Free Cities Assault,1,0,Recruit Units,243
+Free Cities Assault,2,6,Priority,244
+Free Cities Assault,3,5,Not,245
+Free Cities Assault,4,0,Is City Threatened,246
+Free Cities Assault,5,0,Operation Attack Units,247
+Free Cities Assault,6,9,Concurrent,248
+Free Cities Assault,7,0,Operation Attack Units,249
+Free Cities Assault,8,0,Operation Move,250
+Free Cities Assault,9,16,Concurrent,251
+Free Cities Assault,10,0,Operation Pillage,252
+Free Cities Assault,11,0,Operation Attack Units,253
+Free Cities Assault,12,0,Operation Siege City,254
+Free Cities Assault,13,0,Operation Attack City,255
+Free Cities Assault,14,0,Operation Pillage,256
+Free Cities Assault,15,0,Operation Move,257
+Launch Inquisition,0,9,Concurrent,258
+Launch Inquisition,1,3,Not,259
+Launch Inquisition,2,0,Has Inquisition,260
+Launch Inquisition,3,9,Sequence,261
+Launch Inquisition,4,8,Priority,262
+Launch Inquisition,5,0,Find Available Unit,263
+Launch Inquisition,6,8,Contract Manager Decorator,264
+Launch Inquisition,7,0,Build Unit,265
+Launch Inquisition,8,0,Launch Inquisition,266
+Manage Archaeologist,0,5,Sequence,267
+Manage Archaeologist,1,0,Decode Trigger,268
+Manage Archaeologist,2,0,Move Unit,269
+Manage Archaeologist,3,0,ARCHAEOLOGY: Dig,270
+Manage Archaeologist,4,0,ARCHAEOLOGY: Donate,271
+Manage Great Person,0,13,Concurrent,272
+Manage Great Person,1,0,Has Great Person,273
+Manage Great Person,2,0,Has Valid Target,274
+Manage Great Person,3,13,Sequence,275
+Manage Great Person,4,9,Priority,276
+Manage Great Person,5,0,Find Unit Targets,277
+Manage Great Person,6,8,Contract Manager Decorator,278
+Manage Great Person,7,0,Build Unit,279
+Manage Great Person,8,0,Upgrade Units,280
+Manage Great Person,9,13,Sequence,281
+Manage Great Person,10,0,Protect Unit,282
+Manage Great Person,11,0,Move Unit,283
+Manage Great Person,12,0,Use Great Person,284
+Manage Spy,0,8,Sequence,285
+Manage Spy,1,0,Decode Trigger,286
+Manage Spy,2,0,SPY: Travel,287
+Manage Spy,3,8,Priority,288
+Manage Spy,4,7,Sequence,289
+Manage Spy,5,0,SPY: Choose Mission,290
+Manage Spy,6,0,SPY: Do Operation,291
+Manage Spy,7,0,SPY: Travel,292
+Naval Superiority Tree,0,15,Sequence,293
+Naval Superiority Tree,1,0,Decode Trigger,294
+Naval Superiority Tree,2,6,Concurrent,295
+Naval Superiority Tree,3,0,Operation Defend Units,296
+Naval Superiority Tree,4,0,Recruit Units,297
+Naval Superiority Tree,5,0,Operation Attack Units,298
+Naval Superiority Tree,6,15,Concurrent,299
+Naval Superiority Tree,7,0,Recruit Units,300
+Naval Superiority Tree,8,0,Operation Defend Units,301
+Naval Superiority Tree,9,13,Naval Choose Target,302
+Naval Superiority Tree,10,13,Concurrent,303
+Naval Superiority Tree,11,0,Operation Move,304
+Naval Superiority Tree,12,0,Operation Attack Units,305
+Naval Superiority Tree,13,0,Naval Pillage,306
+Naval Superiority Tree,14,0,Naval Patrol,307
+Nuclear Assault,0,17,Sequence,308
+Nuclear Assault,1,0,Decode Trigger,309
+Nuclear Assault,2,0,Operation Defend Units,310
+Nuclear Assault,3,17,Concurrent,311
+Nuclear Assault,4,0,Will use nukes,312
+Nuclear Assault,5,17,Sequence,313
+Nuclear Assault,6,10,Concurrent,314
+Nuclear Assault,7,9,Contract Manager Decorator,315
+Nuclear Assault,8,0,Recruit Units,316
+Nuclear Assault,9,0,Operation Attack Units,317
+Nuclear Assault,10,0,Lock Units,318
+Nuclear Assault,11,17,Concurrent,319
+Nuclear Assault,12,0,Operation Change Target,320
+Nuclear Assault,13,0,Recruit Units,321
+Nuclear Assault,14,0,Operation Attack Units,322
+Nuclear Assault,15,0,Operation Move,323
+Nuclear Assault,16,0,Operation Launch nuke,324
+Raid City,0,26,Sequence,325
+Raid City,1,0,Decode Trigger,326
+Raid City,2,9,Sequence,327
+Raid City,3,0,Barbarian Spawn Change,328
+Raid City,4,8,Priority,329
+Raid City,5,7,Turn Limiter,330
+Raid City,6,0,Barbarian Recruit,331
+Raid City,7,0,Barbarian Spawn Change,332
+Raid City,8,0,Barbarian Spawn Change,333
+Raid City,9,12,Concurrent,334
+Raid City,10,0,Operation Attack Units,335
+Raid City,11,0,Operation Move,336
+Raid City,12,22,Priority,337
+Raid City,13,0,Barbarian Raid Check,338
+Raid City,14,22,Turn Limiter,339
+Raid City,15,22,Concurrent,340
+Raid City,16,0,Operation Attack Units,341
+Raid City,17,0,Operation Pillage,342
+Raid City,18,20,In Difficulty Range,343
+Raid City,19,0,Operation Attack City,344
+Raid City,20,0,Operation Defend Units,345
+Raid City,21,0,Operation Move,346
+Raid City,22,25,Concurrent,347
+Raid City,23,0,Operation Attack Units,348
+Raid City,24,0,Operation Move,349
+Raid City,25,0,Notify Owner,350
+Reinforce Ally,0,23,Concurrent,351
+Reinforce Ally,1,0,Operation Defend Units,352
+Reinforce Ally,2,0,Operation Change Target,353
+Reinforce Ally,3,23,Sequence,354
+Reinforce Ally,4,0,Decode Trigger,355
+Reinforce Ally,5,10,Concurrent,356
+Reinforce Ally,6,8,Contract Manager Decorator,357
+Reinforce Ally,7,0,Recruit Units,358
+Reinforce Ally,8,0,Operation Attack Units,359
+Reinforce Ally,9,0,Operation Move,360
+Reinforce Ally,10,0,Lock Units,361
+Reinforce Ally,11,16,Concurrent,362
+Reinforce Ally,12,0,Operation Change Target,363
+Reinforce Ally,13,0,Recruit Units,364
+Reinforce Ally,14,0,Operation Attack Units,365
+Reinforce Ally,15,0,Operation Move,366
+Reinforce Ally,16,23,Concurrent,367
+Reinforce Ally,17,0,Operation Change Target,368
+Reinforce Ally,18,0,Operation Pillage,369
+Reinforce Ally,19,0,Operation Attack Units,370
+Reinforce Ally,20,0,Operation Siege City,371
+Reinforce Ally,21,0,Operation Attack City,372
+Reinforce Ally,22,0,Operation Move,373
+Research Trigger Tech,0,4,Sequence,374
+Research Trigger Tech,1,0,Decode Trigger,375
+Research Trigger Tech,2,4,Contract Manager Decorator,376
+Research Trigger Tech,3,0,Add Goal Tech,377
+Seek Target Wonder,0,48,Sequence,378
+Seek Target Wonder,1,12,Concurrent,379
+Seek Target Wonder,2,0,Decode Trigger,380
+Seek Target Wonder,3,7,Sequence,381
+Seek Target Wonder,4,6,Contract Manager Decorator,382
+Seek Target Wonder,5,0,Purchase Plot,383
+Seek Target Wonder,6,0,Reserve Plot,384
+Seek Target Wonder,7,0,Decode Trigger,385
+Seek Target Wonder,8,12,Sequence,386
+Seek Target Wonder,9,11,Contract Manager Decorator,387
+Seek Target Wonder,10,0,Purchase Plot,388
+Seek Target Wonder,11,0,Reserve Plot,389
+Seek Target Wonder,12,20,Concurrent,390
+Seek Target Wonder,13,15,Contract Manager Decorator,391
+Seek Target Wonder,14,0,Add Goal Tech,392
+Seek Target Wonder,15,20,Priority,393
+Seek Target Wonder,16,0,Check Plot,394
+Seek Target Wonder,17,20,Sequence,395
+Seek Target Wonder,18,20,Contract Manager Decorator,396
+Seek Target Wonder,19,0,Add Goal Tech,397
+Seek Target Wonder,20,22,Contract Manager Decorator,398
+Seek Target Wonder,21,0,Build Unit,399
+Seek Target Wonder,22,27,Sequence,400
+Seek Target Wonder,23,25,Contract Manager Decorator,401
+Seek Target Wonder,24,0,Add Goal Tech,402
+Seek Target Wonder,25,27,Contract Manager Decorator,403
+Seek Target Wonder,26,0,Build Unit,404
+Seek Target Wonder,27,35,Concurrent,405
+Seek Target Wonder,28,30,Contract Manager Decorator,406
+Seek Target Wonder,29,0,Add Goal Tech,407
+Seek Target Wonder,30,35,Priority,408
+Seek Target Wonder,31,0,Check Plot,409
+Seek Target Wonder,32,35,Sequence,410
+Seek Target Wonder,33,35,Contract Manager Decorator,411
+Seek Target Wonder,34,0,Add Goal Tech,412
+Seek Target Wonder,35,48,Concurrent,413
+Seek Target Wonder,36,38,Contract Manager Decorator,414
+Seek Target Wonder,37,0,Build Unit,415
+Seek Target Wonder,38,48,Has Player Ability,416
+Seek Target Wonder,39,48,Contract Manager Decorator,417
+Seek Target Wonder,40,48,Sequence,418
+Seek Target Wonder,41,46,Priority,419
+Seek Target Wonder,42,0,Find Available Unit,420
+Seek Target Wonder,43,45,Contract Manager Decorator,421
+Seek Target Wonder,44,0,Build Unit,422
+Seek Target Wonder,45,0,Cancel Contract,423
+Seek Target Wonder,46,0,Move Unit,424
+Seek Target Wonder,47,0,Build Production,425
+Settle City Op,0,28,Concurrent,426
+Settle City Op,1,0,Decode Trigger,427
+Settle City Op,2,0,Operation Defend Units,428
+Settle City Op,3,28,Sequence,429
+Settle City Op,4,0,Operation Change Target,430
+Settle City Op,5,15,Concurrent,431
+Settle City Op,6,15,Priority,432
+Settle City Op,7,0,Find Available Unit,433
+Settle City Op,8,15,Concurrent,434
+Settle City Op,9,11,Contract Manager Decorator,435
+Settle City Op,10,0,Build Unit,436
+Settle City Op,11,15,Contract Manager Decorator,437
+Settle City Op,12,15,Concurrent,438
+Settle City Op,13,0,Recruit Units,439
+Settle City Op,14,0,Operation Move,440
+Settle City Op,15,0,Lock Units,441
+Settle City Op,16,21,Concurrent,442
+Settle City Op,17,0,Recruit Units,443
+Settle City Op,18,0,Make Formation,444
+Settle City Op,19,0,Operation Attack Units,445
+Settle City Op,20,0,Operation Move,446
+Settle City Op,21,27,Concurrent,447
+Settle City Op,22,0,Operation Change Target,448
+Settle City Op,23,0,Recruit Units,449
+Settle City Op,24,0,Operation Attack Units,450
+Settle City Op,25,0,Operation Naval Escort,451
+Settle City Op,26,0,Operation Move,452
+Settle City Op,27,0,Settle,453
+Siege City Assault,0,57,Concurrent,454
+Siege City Assault,1,0,Decode Trigger,455
+Siege City Assault,2,5,Priority,456
+Siege City Assault,3,0,Can Alpha City,457
+Siege City Assault,4,0,Operation Defend Units,458
+Siege City Assault,5,0,Operation Change Target,459
+Siege City Assault,6,57,Sequence,460
+Siege City Assault,7,15,Concurrent,461
+Siege City Assault,8,12,Priority,462
+Siege City Assault,9,0,Operation Is Ready,463
+Siege City Assault,10,12,Contract Manager Decorator,464
+Siege City Assault,11,0,Recruit Units,465
+Siege City Assault,12,0,Operation Attack Units,466
+Siege City Assault,13,0,Make Formation,467
+Siege City Assault,14,0,Operation Move,468
+Siege City Assault,15,0,Lock Units,469
+Siege City Assault,16,0,Operation Diplomacy,470
+Siege City Assault,17,25,Turn Limiter,471
+Siege City Assault,18,25,Priority,472
+Siege City Assault,19,0,Is At War,473
+Siege City Assault,20,25,Concurrent,474
+Siege City Assault,21,0,Operation Change Target,475
+Siege City Assault,22,0,Recruit Units,476
+Siege City Assault,23,0,Operation Attack Units,477
+Siege City Assault,24,0,Operation Move,478
+Siege City Assault,25,32,Concurrent,479
+Siege City Assault,26,29,Turn Limiter,480
+Siege City Assault,27,29,Contract Manager Decorator,481
+Siege City Assault,28,0,Operation Diplomacy,482
+Siege City Assault,29,0,Operation Attack Units,483
+Siege City Assault,30,32,Turn Limiter,484
+Siege City Assault,31,0,Operation Move,485
+Siege City Assault,32,42,Turn Limiter,486
+Siege City Assault,33,42,Concurrent,487
+Siege City Assault,34,0,Is At War,488
+Siege City Assault,35,0,Operation Change Target,489
+Siege City Assault,36,0,Recruit Units,490
+Siege City Assault,37,0,Operation Attack Units,491
+Siege City Assault,38,0,Operation Air Assault,492
+Siege City Assault,39,0,Operation Pillage,493
+Siege City Assault,40,0,Operation Siege City,494
+Siege City Assault,41,0,Operation Move,495
+Siege City Assault,42,57,Concurrent,496
+Siege City Assault,43,0,Operation Change Target,497
+Siege City Assault,44,0,Recruit Units,498
+Siege City Assault,45,49,Priority,499
+Siege City Assault,46,48,Not,500
+Siege City Assault,47,0,Can Alpha City,501
+Siege City Assault,48,0,Operation Attack City,502
+Siege City Assault,49,0,Operation Attack Units,503
+Siege City Assault,50,0,Operation Pillage,504
+Siege City Assault,51,0,Operation Siege City,505
+Siege City Assault,52,0,Build Military Improvement,506
+Siege City Assault,53,0,Operation Air Assault,507
+Siege City Assault,54,0,Operation Attack City,508
+Siege City Assault,55,0,Operation Pillage,509
+Siege City Assault,56,0,Operation Move,510
+Simple City Defense,0,11,Concurrent,511
+Simple City Defense,1,0,Is City Threatened,512
+Simple City Defense,2,0,Operation Defend Units,513
+Simple City Defense,3,11,Concurrent,514
+Simple City Defense,4,0,Recruit Units,515
+Simple City Defense,5,8,Priority,516
+Simple City Defense,6,0,Can Alpha City,517
+Simple City Defense,7,0,Garrison City,518
+Simple City Defense,8,0,Operation Attack City,519
+Simple City Defense,9,0,Operation Attack Units,520
+Simple City Defense,10,0,Operation Move,521
+Simple City Tree,0,2,Concurrent,522
+Simple City Tree,1,0,City Attack,523
+Simple Operation Attack,0,22,Concurrent,524
+Simple Operation Attack,1,0,Operation Defend Units,525
+Simple Operation Attack,2,0,Operation Attack Units,526
+Simple Operation Attack,3,0,Operation Change Target,527
+Simple Operation Attack,4,22,Sequence,528
+Simple Operation Attack,5,0,Decode Trigger,529
+Simple Operation Attack,6,13,Concurrent,530
+Simple Operation Attack,7,9,Contract Manager Decorator,531
+Simple Operation Attack,8,0,Recruit Units,532
+Simple Operation Attack,9,0,Operation Attack Units,533
+Simple Operation Attack,10,13,Priority,534
+Simple Operation Attack,11,0,Operation Is Ready,535
+Simple Operation Attack,12,0,Operation Move,536
+Simple Operation Attack,13,18,Concurrent,537
+Simple Operation Attack,14,0,Operation Change Target,538
+Simple Operation Attack,15,0,Recruit Units,539
+Simple Operation Attack,16,0,Operation Attack Units,540
+Simple Operation Attack,17,0,Operation Move,541
+Simple Operation Attack,18,22,Concurrent,542
+Simple Operation Attack,19,0,Recruit Units,543
+Simple Operation Attack,20,0,Operation Attack Units,544
+Simple Operation Attack,21,0,Operation Attack,545
+Upgrade Units,0,5,Concurrent,546
+Upgrade Units,1,0,Find Available Unit,547
+Upgrade Units,2,0,Find Unit Targets,548
+Upgrade Units,3,0,Upgrade Units,549
+Upgrade Units,4,0,Move Unit,550
+Use Soothsayer,0,33,Concurrent,551
+Use Soothsayer,1,0,Decode Trigger,552
+Use Soothsayer,2,0,Operation Defend Units,553
+Use Soothsayer,3,33,Sequence,554
+Use Soothsayer,4,0,Operation Change Target,555
+Use Soothsayer,5,15,Concurrent,556
+Use Soothsayer,6,15,Priority,557
+Use Soothsayer,7,0,Find Available Unit,558
+Use Soothsayer,8,15,Concurrent,559
+Use Soothsayer,9,11,Contract Manager Decorator,560
+Use Soothsayer,10,0,Build Unit,561
+Use Soothsayer,11,15,Contract Manager Decorator,562
+Use Soothsayer,12,15,Concurrent,563
+Use Soothsayer,13,0,Recruit Units,564
+Use Soothsayer,14,0,Operation Move,565
+Use Soothsayer,15,22,Priority,566
+Use Soothsayer,16,0,Operation Is Ready,567
+Use Soothsayer,17,22,Concurrent,568
+Use Soothsayer,18,0,Recruit Units,569
+Use Soothsayer,19,0,Make Formation,570
+Use Soothsayer,20,0,Operation Attack Units,571
+Use Soothsayer,21,0,Operation Move,572
+Use Soothsayer,22,0,Lock Units,573
+Use Soothsayer,23,30,Concurrent,574
+Use Soothsayer,24,0,Operation Change Target,575
+Use Soothsayer,25,0,Recruit Units,576
+Use Soothsayer,26,0,Make Formation,577
+Use Soothsayer,27,0,Operation Attack Units,578
+Use Soothsayer,28,0,Operation Naval Escort,579
+Use Soothsayer,29,0,Operation Move,580
+Use Soothsayer,30,33,Concurrent,581
+Use Soothsayer,31,0,Operation Move,582
+Use Soothsayer,32,0,Settle,583
+Build Railroad,0,11,Sequence,584
+Build Railroad,1,0,Decode Trigger,585
+Build Railroad,2,6,Priority,586
+Build Railroad,3,0,Find Available Unit,587
+Build Railroad,4,6,Contract Manager Decorator,588
+Build Railroad,5,0,Build Unit,589
+Build Railroad,6,11,Concurrent,590
+Build Railroad,7,0,Railroad Target,591
+Build Railroad,8,11,Sequence,592
+Build Railroad,9,0,Move Unit,593
+Build Railroad,10,0,Build Improvement,594

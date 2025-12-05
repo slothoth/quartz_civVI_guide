@@ -1,0 +1,1 @@
+This will detail all the possible arguments for each EffectType documented in the game, including firaxis documents of GameEffectArguments. This maybe shouldnt be a chapter, and instead be a supplemental document? [[TODO]]
