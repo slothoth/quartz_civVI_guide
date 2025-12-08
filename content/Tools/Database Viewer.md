@@ -1,0 +1,5 @@
+My recommendation for a Database viewer would be [DBeaver](https://dbeaver.io/download/). This allows you to connect the copy of the gameplay database that gets generated on loading into the game, so that you can write SQL commands against it, ensure those commands work, and debug them. Its free software as well. Other alternatives would be sqlite viewer. Lets go through how to set it up:
+
+First install the software, and then open it. We need to connect to our database, so we go File>New then in the new window Dbeaver>Database Connection. There will then be lots of options, pick SQLite, if its not visible, search for it. Then in the next section, next to Path there should be a button "Open". Use that to navigate to your copy of the database. You can find this at `C:/Users/$USERNAME$/AppData/Local/Firaxis Games/Sid Meier's Civilization VI/Cache/DebugGameplay.sqlite`.
+
+Then click Finish. You should be connected to a debug copy of the gameplay database! You can now right click it to run scripts to see how your mod might work, or how it might error. Or inspect the contents.
