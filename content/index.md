@@ -1,18 +1,18 @@
 ---
 title: Slothoth's Civ VI Modding Guide
 ---
-
+This is a one-stop shop guide for how to Mod in Civ VI. It will collate together tutorials, links, resources and external guides.
 - [[Preamble]]
 # Database
 - [[Hello World. The Simplest Mod]]
 - [[Game Table Data]]
 - [[Database Debugging]]
-- Appendix of tables as structured graph
 - [[Modifiers]]
 - [[AI Modding]]
 - [[Unit Abilities]]
 - [[Names and Descriptions. Localization]]
 - [[Glossary]]
+- [[Appendix of Tables]]
 # Lua 
 - [[An Introduction to Lua]]
 - [[Modifier Bridging]]
@@ -37,17 +37,13 @@ title: Slothoth's Civ VI Modding Guide
 		- Quick Example runthrough (videos?)
 	- 
 - Appendix of ways to unfuck asset editor problems
-# workflows
-
-## Database 
-- Cheat modes
-- SQL linting
-- XML linting
-	
 # DLL
 - [[What is DLL Modding?]]
 - [[Debugging Unhandled Exceptions]]
 # Tools
-- Code Editors: Sublime, Notepad++, etc.
-- Database Viewer
+- [[Code Editors]]
+- [[Database Viewer]]
 - Find in Files solution (ctrl-shift-F for editors, or ripgrep, or AgentRansack)
+- [[Firetuner]]
+- [[AppOptions.txt]]
+- [[Documentation]]

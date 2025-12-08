@@ -67,7 +67,7 @@ gridButton:RegisterCallback(Mouse.eLClick, HelloWorld).  -- make it do a functio
 ```
 We get a UI element from its path, called ctrl. Our button that we defined in our xml file is then transferred to belong to that UI element we are interested in, using ChangeParent. So it now should show up in that UI element. As we still have the reference to it, we can then programatically adjust things about it, i.e. we still have control over it.
 
-Note: You can see the paths of all the UI elements in the Firetuner Panel called [[TODO]]
+Note: You can see the paths of all the UI elements in the [[Firetuner]] Panel called Forge
 
 One thing that's really great about UserInterface modding, is despite its complexity, iterative development can be incredibly fast. The UI should automatically reload anytime you save a file being used in the UI. So you can modify your file mid-game, alt-tab back in, and see your changes live, and repeat.
 

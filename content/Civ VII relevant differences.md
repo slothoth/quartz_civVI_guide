@@ -4,4 +4,4 @@
 - Narratives
 - Look at SDK
 Relevant Chapters that apply to both civ VI and civ VII:
-- Modifiers ([[TODO]] mention differences)
+- Modifiers: (explain GameEffects xml)

@@ -5,6 +5,7 @@ If you already have experience with programming languages, a good guide to Lua s
 
 A few "gotchas" of Lua:
 - Lua often uses nil return values rather than erroring out. So for example if you try access a value that doesn't exist in a table, it will just return nil.
+- A common pattern in Lua is then to do "if my_table\[my_value\] then ...". You can think of this as just checking the value exists. When you start getting into more complicated projects, my_value itself might be gotten from a table access, and if that table didn't contain it, would return nil. And if you try use nil as the index of a table, you would error on the second table, rather than the source, on the first.
 
 # Gameplay Lua
 
@@ -78,7 +79,9 @@ This can become impractical when designing large pieces of code, or ones that re
 ```lua
 print(Players[0])
 ```
-A line like this will show up in your Lua.log [[TODO]]. A sad note is that Lua.log does not exist on MacOS versions of the game, nor can Firetuner be used. It is still possible to run Lua mods, but it becomes very difficult to test them.
+A line like this will show up in your Lua.log:
+
+![[print_lua_log.png]]A sad note is that Lua.log does not exist on MacOS versions of the game, nor can Firetuner be used. It is still possible to run Lua mods, but it becomes very difficult to test them.
 
 An additional way to speed up your code writing is to use a code editor with code completion and linting. For this tutorial we will use Sublime, but tools like PyCharm or Visual Studio Code would work well. We will use WildW's excellent [[Tool Links#VS Code Library| VS Code Extension]]:
 
