@@ -17,7 +17,7 @@ While not used in this case, SQL tables will often have default values for certa
 
 The second statement is a little more complicated. It is a command to change rows of the database to set the value of a column, YieldChange to 10, but only in rows where the BuildingType column value is equal to 'BUILDING_MONUMENT' and YieldType column value is equal to 'YIELD_CULTURE'. There is sometimes behaviour you might not expect, like if you misspelled 'YIELD_CULTURE' as 'YLIED_CULTURE', it would not change anything. 
 
-There are lots of tables, and the information of we would think of as one object, like BUILDING_MONUMENT is stored across many tables. Also included in this guide is a tool that lets you text search all those tables to find all the places 'BUILDING_MONUMENT' is mentioned, to make this easier. [[TODO]] PACKAGE THAT TOOL, PYTHON/EXE is maybe not ideal.
+There are lots of tables, and the information of we would think of as one object, like BUILDING_MONUMENT is stored across many tables. There is an online [[Tool Links#Database Search|tool]] that lets you text search all those tables to find all the places 'BUILDING_MONUMENT' is mentioned, to make this easier.
 
 In your modding journey, you will certainly make syntax errors and mistakes that cause your mod not to work. Don't worry, this is a normal part of development, what matters is being able to quickly understand the cause of your problem, which is where [[Database Debugging]] comes in.
 

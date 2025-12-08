@@ -8,3 +8,6 @@ This tool lets you get auto-completion for writing Lua code, specifically for th
 # Modding Companion 2.0
 An essential companion for Lua modding, the Objects and Events sheets are great for finding functions to implement what you want in Lua, or seeing what a function returns.
 https://docs.google.com/spreadsheets/d/1EiCTOlPx3IkeAmU0xujGEp9k0v9VuCxe95OcrsyWOVs/
+
+# Database Search
+A decent search tool for looking up database entries on the fly is [here](https://civ6srchservice.netlify.app/).

@@ -1,1 +1,0 @@
-I have hosted the database without any mods and with all DLC and all modes on bar the Zombies mode (which deletes a lot of content), here, in a way that is text searchable. I also have included a python script you can use to generate your own text-searchable copy, which can be useful when checking your own mod has inserted the right content.
